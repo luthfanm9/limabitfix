@@ -111,19 +111,24 @@
             id="dropdownMenu" class="hidden absolute right-50 mt-2 w-auto bg-white shadow-2xl rounded-lg"
             >
               <a
-                href="#"
+                href="development.html"
                 class="block lg:pr-24 pr-fill lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg"
                 >Development</a>
               <a
                 href="manageservice.html"
                 class="block lg:pr-24 pr-22 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
                 "
-                >Managed Service</a>
+                >Manage Service</a>
               <a
                 href="aialgorithm.html"
                 class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
                 "
                 >AI Algorithm</a>
+                <a
+                href="scasy.html"
+                class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
+                "
+                >SCASY</a>
             </div>  
           </li>
           <li>
@@ -185,7 +190,7 @@
 
     <!-- ABOUT SECTION -->
 
-    <section class="about max-w-6xl mx-auto items-center lg:pt-36 pt-32 lg:pb-16 pb-8 px-6">
+    <section class="about max-w-6xl mx-auto items-center lg:pt-36 pt-32 lg:pb-8 pb-4 px-6">
         <div class="flex flex-col gap-y-8">
             <div class="group hover:text-primary flex flex-row gap-x-3 items-center">
                 <a href="index.html">
@@ -214,122 +219,1044 @@
 
     <!-- SERVICES SECTION -->
 
-    <section class="services max-w-6xl mx-auto lg:pt-6 pt-2 lg:pb-32 pb-16 px-6">
-      <div class="flex flex-col lg:gap-y-12 gap-y-8">
-        <div class="flex flex-col gap-y-4">
-          <h3 class="text-secondary-dark font-display font-semibold lg:text-4xl text-2xl">
-            Application Development
-          </h3>
-          <p class="font-body lg:text-lg text-md text-secondary-normal">
-            Application Development > Custom Application Development | Portals | MS CRM | Mobile App.
-          </p>
-        </div>
-        <div>
-          <div class="flex flex-col gap-y-4">
-          <h3 class="text-secondary-dark font-display font-semibold lg:text-4xl text-2xl">
-              Quality Assurance
-          </h3>
-          <div class="flex flex-col gap-y-2">
-            <div class="flex flex-row items-center-top gap-x-4">
-                  <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                    -
-                  </h4>
-                  <p
-                    class="font-body lg:text-lg text-md text-secondary-normal"
-                  >
-                  Bug Finding
+    <section class="services max-w-6xl mx-auto lg:pt-6 pt-4 lg:pb-20 pb-12 px-6">
+      <div class="flex flex-col gap-y-8">
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Application Development
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
 
-                  </p>
+        <!-- CUSTOM APP DEVELOPMENT -->
+        <div id="card"  class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdown(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col ">
+                <h3 id="title" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white font-body text-secondary-dark">
+                  Custom Application Development
+                  <!-- <span id="arrow" class="ml-10 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description" class="hidden mt-4 text-neutral-white text-sm">
+                  We design and deliver tailor-made software solutions that align perfectly with your business goals, ensuring you stand out in a crowded market.
+                </p>
+              </div>
             </div>
-            <div class="flex flex-row items-center-top gap-x-4">
-                    <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                      -
-                    </h4>
-                    <p
-                      class="font-body lg:text-lg text-md text-secondary-normal"
-                    >
-                    Performance Testing
-                    </p>
-            </div>
-            <div class="flex flex-row items-center-top gap-x-4">
-                    <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                      -
-                    </h4>
-                    <p
-                      class="font-body lg:text-lg text-md text-secondary-normal"
-                    >
-                    Deployment Testing
-                    </p>
-            </div>
-            <div class="flex flex-row items-center-top gap-x-4">
-                    <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                      -
-                    </h4>
-                    <p
-                      class="font-body lg:text-lg text-md text-secondary-normal"
-                    >
-                    Reporting
-                    </p>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="flex flex-col gap-y-2 font-body">
+        
+        <script>
+          function toggleDropdown(event) {
+            event.preventDefault();
+            const description = document.getElementById('description');
+            const card = document.getElementById('card');
+            const title = document.getElementById('title');
+            const arrow = document.getElementById('arrow');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card');
+            const description = document.getElementById('description');
+            const title = document.getElementById('title');
+            const arrow = document.getElementById('arrow');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- PORTALS -->
+        <div id="card-portal" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownPortal(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-portal" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Portal
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-portal" class="hidden mt-4 text-neutral-white text-sm">
+                  For businesses in a variety of industries, our team has more than 20 years of expertise building and developing portals.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownPortal(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-portal');
+            const card = document.getElementById('card-portal');
+            const title = document.getElementById('title-portal');
+            const arrow = document.getElementById('arrow-portal');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-portal');
+            const description = document.getElementById('description-portal');
+            const title = document.getElementById('title-portal');
+            const arrow = document.getElementById('arrow-portal');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- MS CRM -->
+        <div id="card-ms" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownMsCrm(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-ms" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  MS CRM
+                </h3>
+                <p id="description-ms" class="hidden mt-4 text-neutral-white text-sm">
+                  Optimize customer relationships with our customized Microsoft CRM solutions, driving engagement and boosting sales.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownMsCrm(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-ms');
+            const card = document.getElementById('card-ms');
+            const title = document.getElementById('title-ms');
+            const arrow = document.getElementById('arrow-ms');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-ms');
+            const description = document.getElementById('description-ms');
+            const title = document.getElementById('title-ms');
+            const arrow = document.getElementById('arrow-ms');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- MOBILE APPLICATION -->
+        <div id="card-ma" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownMa(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-ma" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Mobile Application
+                </h3>
+                <p id="description-ma" class="hidden mt-4 text-neutral-white text-sm">
+                  Connect with your audience on the go with our state-of-the-art mobile applications, crafted for maximum reach and impact.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownMa(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-ma');
+            const card = document.getElementById('card-ma');
+            const title = document.getElementById('title-ma');
+            const arrow = document.getElementById('arrow-ma');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-ma');
+            const description = document.getElementById('description-ma');
+            const title = document.getElementById('title-ma');
+            const arrow = document.getElementById('arrow-ma');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
         </div>
         </div>
-        <div>
-          <div class="flex flex-col gap-y-4">
-          <h3 class="text-secondary-dark font-display font-semibold lg:text-4xl text-2xl">
-              Application Support
-          </h3>
-          <div class="flex flex-col gap-y-2">
-            <div class="flex flex-row items-center-top gap-x-4">
-                  <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                    -
-                  </h4>
-                  <p
-                    class="font-body lg:text-lg text-md text-secondary-normal"
-                  >
-                  Web Application
-                  </p>
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Custom Application Development
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- LEGACY APPLICATIONS -->
+        <div id="card-legacy" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownlegacy(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-legacy" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Legacy Applications
+                </h3>
+                <p id="description-legacy" class="hidden mt-4 text-neutral-white text-sm">
+                  We provide modernization services for legacy applications, converting old ones into more easily maintained, cutting-edge solutions that better suit your present business requirements.
+                </p>
+              </div>
             </div>
-            <div class="flex flex-row items-center-top gap-x-4">
-                    <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                      -
-                    </h4>
-                    <p
-                      class="font-body lg:text-lg text-md text-secondary-normal"
-                    >
-                    Mobile Application
-                    </p>
-            </div>
-            <div class="flex flex-row items-center-top gap-x-4">
-                    <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                      -
-                    </h4>
-                    <p
-                      class="font-body lg:text-lg text-md text-secondary-normal"
-                    >
-                    Content Management
-                    </p>
-            </div>
-            <div class="flex flex-row items-center-top gap-x-4">
-                    <h4 class="font-body lg:text-lg text-md text-secondary-normal">
-                      -
-                    </h4>
-                    <p
-                      class="font-body lg:text-lg text-md text-secondary-normal"
-                    >
-                    Integration
-                    </p>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="flex flex-col gap-y-2 font-body">
+
+        <script>
+          function toggleDropdownlegacy(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-legacy');
+            const card = document.getElementById('card-legacy');
+            const title = document.getElementById('title-legacy');
+            const arrow = document.getElementById('arrow-legacy');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-legacy');
+            const description = document.getElementById('description-legacy');
+            const title = document.getElementById('title-legacy');
+            const arrow = document.getElementById('arrow-legacy');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- WEB APPLICATIONS -->
+        <div id="card-wp" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownwp(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-wp" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Web Applications
+                </h3>
+                <p id="description-wp" class="hidden mt-4 text-neutral-white text-sm">
+                  Our team creates dynamic web applications that are responsive, highly functional, and aesthetically pleasing, giving users a smooth experience across all platforms.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownwp(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-wp');
+            const card = document.getElementById('card-wp');
+            const title = document.getElementById('title-wp');
+            const arrow = document.getElementById('arrow-wp');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-wp');
+            const description = document.getElementById('description-wp');
+            const title = document.getElementById('title-wp');
+            const arrow = document.getElementById('arrow-wp');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- CLIENT SERVER -->
+        <div id="card-cs" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowncs(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-cs" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Client-Server Applications
+                </h3>
+                <p id="description-cs" class="hidden mt-4 text-neutral-white text-sm">
+                  Our team creates and executes client-server programs that provide safe and effective communication between client devices and the server, guaranteeing the seamless and secure functioning of your business. 
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowncs(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-cs');
+            const card = document.getElementById('card-cs');
+            const title = document.getElementById('title-cs');
+            const arrow = document.getElementById('arrow-cs');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-cs');
+            const description = document.getElementById('description-cs');
+            const title = document.getElementById('title-cs');
+            const arrow = document.getElementById('arrow-cs');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- DESKTOP -->
+        <div id="card-desktop" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowndesktop(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-desktop" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Desktop Applications                </h3>
+                <p id="description-desktop" class="hidden mt-4 text-neutral-white text-sm">
+                  For businesses requiring powerful and secure offline solutions, we develop desktop applications that are reliable, user-friendly, and capable of handling complex tasks with ease.                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowndesktop(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-desktop');
+            const card = document.getElementById('card-desktop');
+            const title = document.getElementById('title-desktop');
+            const arrow = document.getElementById('arrow-desktop');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-desktop');
+            const description = document.getElementById('description-desktop');
+            const title = document.getElementById('title-desktop');
+            const arrow = document.getElementById('arrow-desktop');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- WEB SERVICES -->
+        <div id="card-webservis" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownwebservis(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-webservis" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Web Services
+                 </h3>
+                <p id="description-webservis" class="hidden mt-4 text-neutral-white text-sm">
+                  We develop and integrate web services that enable internet-based communication between various applications, promoting data interchange and system compatibility.              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownwebservis(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-webservis');
+            const card = document.getElementById('card-webservis');
+            const title = document.getElementById('title-webservis');
+            const arrow = document.getElementById('arrow-webservis');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-webservis');
+            const description = document.getElementById('description-webservis');
+            const title = document.getElementById('title-webservis');
+            const arrow = document.getElementById('arrow-webservis');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        <!-- REPORTING -->
+        <div id="card-rpt" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownrpt(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-rpt" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Reporting Solutions
+                 </h3>
+                <p id="description-rpt" class="hidden mt-4 text-neutral-white text-sm">
+                  With personalized reports and dashboards, our reporting solutions help businesses obtain insights from their data and support you in making decisions based on up-to-date information.             
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownrpt(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-rpt');
+            const card = document.getElementById('card-rpt');
+            const title = document.getElementById('title-rpt');
+            const arrow = document.getElementById('arrow-rpt');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-rpt');
+            const description = document.getElementById('description-rpt');
+            const title = document.getElementById('title-rpt');
+            const arrow = document.getElementById('arrow-rpt');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        <!-- INTEGRATION -->
+        <div id="card-integ" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowninteg(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-integ" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Integration Services
+                 </h3>
+                <p id="description-integ" class="hidden mt-4 text-neutral-white text-sm">
+                  Our integration services ensure smooth data flow and increased productivity across all business operations by connecting different systems and apps within your company.              
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowninteg(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-integ');
+            const card = document.getElementById('card-integ');
+            const title = document.getElementById('title-integ');
+            const arrow = document.getElementById('arrow-integ');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-integ');
+            const description = document.getElementById('description-integ');
+            const title = document.getElementById('title-integ');
+            const arrow = document.getElementById('arrow-integ');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        </div>
+        </div>
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Portals
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- CUSTOM DEVELOPED -->
+        <div id="card-cd" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowncd(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-cd" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Custom Developed Portals
+                 </h3>
+                <p id="description-cd" class="hidden mt-4 text-neutral-white text-sm">
+                  We build tailored portals — customer, employee, or partner — integrating seamlessly with your systems for a smooth, scalable user experience.              
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowncd(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-cd');
+            const card = document.getElementById('card-cd');
+            const title = document.getElementById('title-cd');
+            const arrow = document.getElementById('arrow-cd');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-cd');
+            const description = document.getElementById('description-cd');
+            const title = document.getElementById('title-cd');
+            const arrow = document.getElementById('arrow-cd');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        <!-- COLLABORATION -->
+        <div id="card-collab" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowncollab(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-collab" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Collaboration Portals
+                 </h3>
+                <p id="description-collab" class="hidden mt-4 text-neutral-white text-sm">
+                  Centralize teamwork with portals featuring instant messaging, document sharing, and project management for efficient, global collaboration.              
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowncollab(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-collab');
+            const card = document.getElementById('card-collab');
+            const title = document.getElementById('title-collab');
+            const arrow = document.getElementById('arrow-collab');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-collab');
+            const description = document.getElementById('description-collab');
+            const title = document.getElementById('title-collab');
+            const arrow = document.getElementById('arrow-collab');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- CONTENT MANAGEMENT -->
+        <div id="card-content" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowncontent(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-content" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Content Management Portals
+                 </h3>
+                <p id="description-content" class="hidden mt-4 text-neutral-white text-sm">
+                  Easily create, edit, and publish content across platforms with user-friendly, scalable management tools for consistent online presence.              
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowncontent(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-content');
+            const card = document.getElementById('card-content');
+            const title = document.getElementById('title-content');
+            const arrow = document.getElementById('arrow-content');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-content');
+            const description = document.getElementById('description-content');
+            const title = document.getElementById('title-content');
+            const arrow = document.getElementById('arrow-content');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        </div>
+        </div>
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Mobile Applications
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- WINDOWS MOBILE -->
+        <div id="card-wmobile" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownwmobile(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-wmobile" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Windows Mobile
+                 </h3>
+                <p id="description-wmobile" class="hidden mt-4 text-neutral-white text-sm">
+                  Utilizing the security and interoperability of the Windows Mobile platform, we create dependable applications that offer potent business solutions.              
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownwmobile(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-wmobile');
+            const card = document.getElementById('card-wmobile');
+            const title = document.getElementById('title-wmobile');
+            const arrow = document.getElementById('arrow-wmobile');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-wmobile');
+            const description = document.getElementById('description-wmobile');
+            const title = document.getElementById('title-wmobile');
+            const arrow = document.getElementById('arrow-wmobile');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+
+        
+        <!-- IPHONE -->
+        <div id="card-iphone" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowniphone(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-iphone" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  iPhone
+                 </h3>
+                <p id="description-iphone" class="hidden mt-4 text-neutral-white text-sm">
+                  Tap into the vast iOS ecosystem with our custom iPhone applications, designed to provide an intuitive user experience while taking advantage of Apple's advanced features and technologies.              
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowniphone(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-iphone');
+            const card = document.getElementById('card-iphone');
+            const title = document.getElementById('title-iphone');
+            const arrow = document.getElementById('arrow-iphone');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-iphone');
+            const description = document.getElementById('description-iphone');
+            const title = document.getElementById('title-iphone');
+            const arrow = document.getElementById('arrow-iphone');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- BLUETOOTH -->
+        <div id="card-blue" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownblue(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-blue" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Bluetooth
+                 </h3>
+                <p id="description-blue" class="hidden mt-4 text-neutral-white text-sm">
+                  For creative solutions like data sharing, device synchronization, and proximity marketing, use Bluetooth technology to establish smooth connections between devices.         
+                 </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownblue(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-blue');
+            const card = document.getElementById('card-blue');
+            const title = document.getElementById('title-blue');
+            const arrow = document.getElementById('arrow-blue');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-blue');
+            const description = document.getElementById('description-blue');
+            const title = document.getElementById('title-blue');
+            const arrow = document.getElementById('arrow-blue');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        <!-- GPRS -->
+        <div id="card-gprs" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowngprs(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-gprs" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  GPRS
+                 </h3>
+                <p id="description-gprs" class="hidden mt-4 text-neutral-white text-sm">
+                  Employ GPRS technology to make sure your mobile apps stay online even in places with spotty internet service, enabling constant data sharing and instant messaging.         
+                 </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowngprs(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-gprs');
+            const card = document.getElementById('card-gprs');
+            const title = document.getElementById('title-gprs');
+            const arrow = document.getElementById('arrow-gprs');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-gprs');
+            const description = document.getElementById('description-gprs');
+            const title = document.getElementById('title-gprs');
+            const arrow = document.getElementById('arrow-gprs');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- GSM -->
+        <div id="card-gsm" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowngsm(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-gsm" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  GSM
+                 </h3>
+                <p id="description-gsm" class="hidden mt-4 text-neutral-white text-sm">
+                  Utilize GSM networks' worldwide reach to make sure your mobile apps run and are accessible everywhere, offering a consistent user experience across geographies.         
+                 </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdowngsm(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-gsm');
+            const card = document.getElementById('card-gsm');
+            const title = document.getElementById('title-gsm');
+            const arrow = document.getElementById('arrow-gsm');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-gsm');
+            const description = document.getElementById('description-gsm');
+            const title = document.getElementById('title-gsm');
+            const arrow = document.getElementById('arrow-gsm');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- 3G -->
+        <div id="card-3g" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdown3g(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-3g" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  3G
+                 </h3>
+                <p id="description-3g" class="hidden mt-4 text-neutral-white text-sm">
+                  Take use of 3G networks' speed and dependability to create quick, responsive mobile apps that satisfy and engage consumers wherever they are.         
+                 </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdown3g(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-3g');
+            const card = document.getElementById('card-3g');
+            const title = document.getElementById('title-3g');
+            const arrow = document.getElementById('arrow-3g');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-3g');
+            const description = document.getElementById('description-3g');
+            const title = document.getElementById('title-3g');
+            const arrow = document.getElementById('arrow-3g');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- SMS & MMS-->
+        <div id="card-smsmms" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownsmsmms(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-smsmms" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  SMS & MMS
+                 </h3>
+                <p id="description-smsmms" class="hidden mt-4 text-neutral-white text-sm">
+                  Personalized communication choices that can improve customer interaction, send targeted messages, and increase overall satisfaction can help you engage with your customers directly through SMS and MMS.         
+                 </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <script>
+          function toggleDropdownsmsmms(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-smsmms');
+            const card = document.getElementById('card-smsmms');
+            const title = document.getElementById('title-smsmms');
+            const arrow = document.getElementById('arrow-smsmms');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-smsmms');
+            const description = document.getElementById('description-smsmms');
+            const title = document.getElementById('title-smsmms');
+            const arrow = document.getElementById('arrow-smsmms');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
         </div>
         </div>
       </div>
     </section>
-
     <!-- FOOTER SECTION -->
 
     <section class="footer bg-secondary-dark w-screen mx-auto px-10 pt-24 pb-12">

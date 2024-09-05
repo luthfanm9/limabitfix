@@ -115,15 +115,20 @@
                 class="block lg:pr-24 pr-fill lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg"
                 >Development</a>
               <a
-                href="#"
+                href="manageservice.html"
                 class="block lg:pr-24 pr-22 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
                 "
-                >Managed Service</a>
+                >Manage Service</a>
               <a
                 href="aialgorithm.html"
                 class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
                 "
                 >AI Algorithm</a>
+                <a
+                href="scasy.html"
+                class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
+                "
+                >SCASY</a>
             </div>  
           </li>
           <li>
@@ -185,7 +190,7 @@
 
     <!-- ABOUT SECTION -->
 
-    <section class="about max-w-6xl mx-auto items-center lg:pt-36 pt-32 lg:pb-16 pb-8 px-6">
+    <section class="about max-w-6xl mx-auto items-center lg:pt-36 pt-32 lg:pb-14 pb-8 px-6">
         <div class="flex flex-col gap-y-8">
             <div class="group hover:text-primary flex flex-row gap-x-3 items-center">
                 <a href="index.html">
@@ -215,6 +220,1108 @@
     <!-- SERVICES SECTION -->
 
     <section class="services max-w-6xl mx-auto lg:py-6 py-4 px-6">
+      <div class="flex flex-col gap-y-8">
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Application Maintenance & Support
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- OUTSOURCING ANALYSIS -->
+        <div id="card-oa" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownoa(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-oa" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Outsourcing Analysis
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-oa" class="hidden mt-4 text-neutral-white text-sm">
+                  Utilize our outsourcing analysis to uncover cost savings and operational effectiveness. We pinpoint the optimal outsourcing prospects to optimize your business processes and increase your performance. 
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownoa(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-oa');
+            const card = document.getElementById('card-oa');
+            const title = document.getElementById('title-oa');
+            const arrow = document.getElementById('arrow-oa');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-oa');
+            const description = document.getElementById('description-oa');
+            const title = document.getElementById('title-oa');
+            const arrow = document.getElementById('arrow-oa');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+
+        <!-- TRANSITION -->
+        <div id="card-trans" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdowntrans(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-trans" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Transition
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-trans" class="hidden mt-4 text-neutral-white text-sm">
+                  Smoothly navigate changes with our expert Transition services. We ensure a seamless shift to new technologies or processes with minimal disruption to your business. 
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdowntrans(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-trans');
+            const card = document.getElementById('card-trans');
+            const title = document.getElementById('title-trans');
+            const arrow = document.getElementById('arrow-trans');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-trans');
+            const description = document.getElementById('description-trans');
+            const title = document.getElementById('title-trans');
+            const arrow = document.getElementById('arrow-trans');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- VALUE ADD SERVICES -->
+        <div id="card-vas" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownvas(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-vas" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Value Add Services
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-vas" class="hidden mt-4 text-neutral-white text-sm">
+                  Use our Value Add Services to grow your business. Our customized solutions boost growth and provide business a competitive edge by providing extra benefits. 
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownvas(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-vas');
+            const card = document.getElementById('card-vas');
+            const title = document.getElementById('title-vas');
+            const arrow = document.getElementById('arrow-vas');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-vas');
+            const description = document.getElementById('description-vas');
+            const title = document.getElementById('title-vas');
+            const arrow = document.getElementById('arrow-vas');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- SERVICES DELIVERY -->
+        <div id="card-SD" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownSD(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-SD" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Service Delivery
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-SD" class="hidden mt-4 text-neutral-white text-sm">
+                  We provide exceptional service delivery that goes above and beyond. To make sure your demands are satisfied and your objectives are fulfilled, we put a strong emphasis on providing prompt, effective, and high-quality service.  
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownSD(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-SD');
+            const card = document.getElementById('card-SD');
+            const title = document.getElementById('title-SD');
+            const arrow = document.getElementById('arrow-SD');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-SD');
+            const description = document.getElementById('description-SD');
+            const title = document.getElementById('title-SD');
+            const arrow = document.getElementById('arrow-SD');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        </div>
+        </div>
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Application Transformation
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- APPLICATION MIGRATION -->
+        <div id="card-AM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownAM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-AM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Application Migration
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-AM" class="hidden mt-4 text-neutral-white text-sm">
+                  Effortlessly migrate your applications with our Application Migration services. We ensure a secure and efficient transition with minimal downtime and maximum performance.  
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownAM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-AM');
+            const card = document.getElementById('card-AM');
+            const title = document.getElementById('title-AM');
+            const arrow = document.getElementById('arrow-AM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-AM');
+            const description = document.getElementById('description-AM');
+            const title = document.getElementById('title-AM');
+            const arrow = document.getElementById('arrow-AM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- DATABASE MIGRATION -->
+        <div id="card-DM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownDM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-DM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Database Migration
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-DM" class="hidden mt-4 text-neutral-white text-sm">
+                  Utilize our expertise in database migration to migrate your databases with ease. In order to guarantee data integrity and continuous service, we oversee the entire procedure.   
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownDM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-DM');
+            const card = document.getElementById('card-DM');
+            const title = document.getElementById('title-DM');
+            const arrow = document.getElementById('arrow-DM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-DM');
+            const description = document.getElementById('description-DM');
+            const title = document.getElementById('title-DM');
+            const arrow = document.getElementById('arrow-DM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- REVERSE ENGINEERING -->
+        <div id="card-RE" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownRE(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-RE" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Reverse Engineering
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-RE" class="hidden mt-4 text-neutral-white text-sm">
+                  Utilize reverse engineering to unleash the full potential of your systems. For improved performance and integration, we evaluate and improve your current products.   
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownRE(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-RE');
+            const card = document.getElementById('card-RE');
+            const title = document.getElementById('title-RE');
+            const arrow = document.getElementById('arrow-RE');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-RE');
+            const description = document.getElementById('description-RE');
+            const title = document.getElementById('title-RE');
+            const arrow = document.getElementById('arrow-RE');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- SERVICE ENABLEMENT -->
+        <div id="card-SE" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownSE(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-SE" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Service Enablement
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-SE" class="hidden mt-4 text-neutral-white text-sm">
+                  Empower your business with our Service Enablement solutions. We provide the support and tools needed to fully leverage your services for optimal results.   
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownSE(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-SE');
+            const card = document.getElementById('card-SE');
+            const title = document.getElementById('title-SE');
+            const arrow = document.getElementById('arrow-SE');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-SE');
+            const description = document.getElementById('description-SE');
+            const title = document.getElementById('title-SE');
+            const arrow = document.getElementById('arrow-SE');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        </div>
+        </div>
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Testing Services
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- FUNCTIONAL TESTING -->
+        <div id="card-FT" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownFT(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-FT" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Functional Testing
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-FT" class="hidden mt-4 text-neutral-white text-sm">
+                  Our functional testing services will guarantee that your program operates as intended. In order to ensure excellence and an excellent user experience, we test every feature.    
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownFT(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-FT');
+            const card = document.getElementById('card-FT');
+            const title = document.getElementById('title-FT');
+            const arrow = document.getElementById('arrow-FT');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-FT');
+            const description = document.getElementById('description-FT');
+            const title = document.getElementById('title-FT');
+            const arrow = document.getElementById('arrow-FT');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- REGRESSION TESTING -->
+        <div id="card-RT" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownRT(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-RT" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Regression Testing
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-RT" class="hidden mt-4 text-neutral-white text-sm">
+                  Protect your software’s stability with our Regression Testing. We ensure new updates don't disrupt existing features, maintaining reliability and performance.    
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownRT(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-RT');
+            const card = document.getElementById('card-RT');
+            const title = document.getElementById('title-RT');
+            const arrow = document.getElementById('arrow-RT');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-RT');
+            const description = document.getElementById('description-RT');
+            const title = document.getElementById('title-RT');
+            const arrow = document.getElementById('arrow-RT');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- PERFORMANCE TESTING -->
+        <div id="card-PT" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownPT(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-PT" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Performance Testing
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-PT" class="hidden mt-4 text-neutral-white text-sm">
+                  Boost the effectiveness of your program using our Performance Testing. To guarantee that your apps operate efficiently, we locate and fix performance problems.    
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownPT(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-PT');
+            const card = document.getElementById('card-PT');
+            const title = document.getElementById('title-PT');
+            const arrow = document.getElementById('arrow-PT');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-PT');
+            const description = document.getElementById('description-PT');
+            const title = document.getElementById('title-PT');
+            const arrow = document.getElementById('arrow-PT');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- TEST AUTOMATION -->
+        <div id="card-TA" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownTA(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-TA" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Test Automation
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-TA" class="hidden mt-4 text-neutral-white text-sm">
+                  Test automation can help you improve and expedite your testing procedures. We put automated solutions into practice to increase coverage, accuracy, and speed.     
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownTA(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-TA');
+            const card = document.getElementById('card-TA');
+            const title = document.getElementById('title-TA');
+            const arrow = document.getElementById('arrow-TA');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-TA');
+            const description = document.getElementById('description-TA');
+            const title = document.getElementById('title-TA');
+            const arrow = document.getElementById('arrow-TA');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        </div>
+        </div>
+        <div class="flex flex-col">
+        <h2
+        class="text-secondary-dark font-display font-semibold lg:text-4xl text-3xl lg:my-4 my-2">
+        Service Enablers
+        </h2>
+        <div
+        class="grid md:grid grid-cols-1 gap-x-4 gap-y-4 py-4">
+
+        <!-- ESTIMATION -->
+        <div id="card-EST" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownEST(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-EST" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Estimation
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-EST" class="hidden mt-4 text-neutral-white text-sm">
+                  Make wise plans by using our estimation services. To help you set reasonable expectations and complete the project successfully, we offer accurate cost, time, and resource estimates.     
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownEST(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-EST');
+            const card = document.getElementById('card-EST');
+            const title = document.getElementById('title-EST');
+            const arrow = document.getElementById('arrow-EST');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-EST');
+            const description = document.getElementById('description-EST');
+            const title = document.getElementById('title-EST');
+            const arrow = document.getElementById('arrow-EST');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- REQUIREMENTS MANAGEMENT -->
+        <div id="card-RM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownRM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-RM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Requirements Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-RM" class="hidden mt-4 text-neutral-white text-sm">
+                  Match our requirements management to your project's objectives. To guarantee clarity and effective project outputs, we gather and oversee requirements.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownRM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-RM');
+            const card = document.getElementById('card-RM');
+            const title = document.getElementById('title-RM');
+            const arrow = document.getElementById('arrow-RM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-RM');
+            const description = document.getElementById('description-RM');
+            const title = document.getElementById('title-RM');
+            const arrow = document.getElementById('arrow-RM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- BUILD/RELEASE MANAGEMENT -->
+        <div id="card-BRM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownBRM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-BRM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Build/Release Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-BRM" class="hidden mt-4 text-neutral-white text-sm">
+                  Use Build/Release Management to expedite the delivery of your software. To guarantee prompt and excellent deployments, we take care of the difficulties involved in developing and deploying updates.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownBRM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-BRM');
+            const card = document.getElementById('card-BRM');
+            const title = document.getElementById('title-BRM');
+            const arrow = document.getElementById('arrow-BRM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-BRM');
+            const description = document.getElementById('description-BRM');
+            const title = document.getElementById('title-BRM');
+            const arrow = document.getElementById('arrow-BRM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+
+        <!-- PROJECT MANAGEMENT -->
+        <div id="card-PM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownPM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-PM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Project Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-PM" class="hidden mt-4 text-neutral-white text-sm">
+                  Our project management services can help you lead your projects to success. To guarantee that projects are finished on schedule, under budget, and to your best standards, we scrutinize every little detail.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownPM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-PM');
+            const card = document.getElementById('card-PM');
+            const title = document.getElementById('title-PM');
+            const arrow = document.getElementById('arrow-PM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-PM');
+            const description = document.getElementById('description-PM');
+            const title = document.getElementById('title-PM');
+            const arrow = document.getElementById('arrow-PM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- GOVERNANCE FRAMEWORK -->
+        <div id="card-GF" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownGF(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-GF" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Governance Framework
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-GF" class="hidden mt-4 text-neutral-white text-sm">
+                  Establish strong governance with our Governance Framework services. We create structures that ensure compliance, accountability, and effective management.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownGF(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-GF');
+            const card = document.getElementById('card-GF');
+            const title = document.getElementById('title-GF');
+            const arrow = document.getElementById('arrow-GF');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-GF');
+            const description = document.getElementById('description-GF');
+            const title = document.getElementById('title-GF');
+            const arrow = document.getElementById('arrow-GF');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- CONFIGURATION MANAGEMENT -->
+        <div id="card-CM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownCM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-CM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Configuration Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-CM" class="hidden mt-4 text-neutral-white text-sm">
+                  Make use of configuration management to preserve system integrity. Consistency, security, and dependable performance are guaranteed by the tracking and management of configurations.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownCM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-CM');
+            const card = document.getElementById('card-CM');
+            const title = document.getElementById('title-CM');
+            const arrow = document.getElementById('arrow-CM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-CM');
+            const description = document.getElementById('description-CM');
+            const title = document.getElementById('title-CM');
+            const arrow = document.getElementById('arrow-CM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- QUALITY MANAGEMENT -->
+        <div id="card-QM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownQM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-QM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Quality Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-QM" class="hidden mt-4 text-neutral-white text-sm">
+                  Our quality management services can help you produce goods that are outstanding. To meet and surpass the highest standards, we put in place strict quality assurance procedures.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownQM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-QM');
+            const card = document.getElementById('card-QM');
+            const title = document.getElementById('title-QM');
+            const arrow = document.getElementById('arrow-QM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-QM');
+            const description = document.getElementById('description-QM');
+            const title = document.getElementById('title-QM');
+            const arrow = document.getElementById('arrow-QM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- METRICS/SLA MANAGEMENT -->
+        <div id="card-MM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownMM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-MM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Metrics/SLA Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-MM" class="hidden mt-4 text-neutral-white text-sm">
+                  Utilize metrics and SLA management to improve performance. To make sure that consistent, excellent service delivery is provided, we track and oversee service metrics and SLAs.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownMM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-MM');
+            const card = document.getElementById('card-MM');
+            const title = document.getElementById('title-MM');
+            const arrow = document.getElementById('arrow-MM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-MM');
+            const description = document.getElementById('description-MM');
+            const title = document.getElementById('title-MM');
+            const arrow = document.getElementById('arrow-MM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- TRAINING -->
+        <div id="card-TRA" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownTRA(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-TRA" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Training
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-TRA" class="hidden mt-4 text-neutral-white text-sm">
+                  Boost your team's skills with our Training services. We provide customized programs to enhance expertise, improve performance, and support organizational success.      
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownTRA(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-TRA');
+            const card = document.getElementById('card-TRA');
+            const title = document.getElementById('title-TRA');
+            const arrow = document.getElementById('arrow-TRA');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-TRA');
+            const description = document.getElementById('description-TRA');
+            const title = document.getElementById('title-TRA');
+            const arrow = document.getElementById('arrow-TRA');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        <!-- KNOWLEDGE MANAGEMENT -->
+        <div id="card-KM" class="group hover:bg-secondary-dark relative my-card flex flex-col bg-neutral-white rounded-2xl py-8 px-5 ">
+          <a href="#" class="flex flex-col gap-y-8" onclick="toggleDropdownKM(event)">
+            <div class="z-10 flex flex-col gap-y-8">
+              <div class="flex flex-col">
+                <h3 id="title-KM" class="flex items-center font-body font-bold lg:text-xl text-lg group-hover:text-neutral-white text-secondary-dark">
+                  Knowledge Management
+                  <!-- <span id="arrow-portal" class="ml-20 transform transition-transform duration-300">→</span> -->
+                </h3>
+                <p id="description-KM" class="hidden mt-4 text-neutral-white text-sm">
+                  Make the most of your intellectual property by using knowledge management. To promote creativity and well-informed decision-making, we assist in gathering and organizing insightful information.       
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <script>
+          function toggleDropdownKM(event) {
+            event.preventDefault();
+            const description = document.getElementById('description-KM');
+            const card = document.getElementById('card-KM');
+            const title = document.getElementById('title-KM');
+            const arrow = document.getElementById('arrow-KM');
+            
+            description.classList.toggle('hidden');
+            card.classList.toggle('bg-primary'); // Mengubah background menjadi bg-primary saat di klik
+            title.classList.toggle('text-white'); // Mengubah text menjadi putih saat di klik
+            arrow.classList.toggle('rotate-90'); // Mengubah arah arrow saat di klik
+          }
+        
+          // Fungsi untuk menutup dropdown saat klik di luar area
+          document.addEventListener('click', function(event) {
+            const card = document.getElementById('card-KM');
+            const description = document.getElementById('description-KM');
+            const title = document.getElementById('title-KM');
+            const arrow = document.getElementById('arrow-KM');
+        
+            // Jika klik di luar elemen kartu dan deskripsi sedang tidak hidden
+            if (!card.contains(event.target) && !description.classList.contains('hidden')) {
+              description.classList.add('hidden');
+              card.classList.remove('bg-primary');
+              title.classList.remove('text-white');
+              arrow.classList.remove('rotate-90');
+            }
+          });
+        </script>
+        
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="services max-w-6xl mx-auto lg:py-6 py-4 px-6">
       <div class="flex flex-col lg:gap-y-12 gap-y-8">
         <div class="flex flex-col gap-y-4">
           <h3 class="text-secondary-dark font-display font-semibold lg:text-4xl text-2xl">
@@ -341,7 +1448,7 @@
         </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ADD ON SECTION -->
 
