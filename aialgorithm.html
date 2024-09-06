@@ -24,7 +24,7 @@
       class="fixed z-40 w-screen mx-auto item-center bg-neutral-gray shadow-sm">
       <div
         class="flex flex-row max-w-6xl mx-auto justify-between items-center pt-10 pb-6 px-5">
-        <a href="index.html">
+        <a href="index.html"  class="mr-6 sm:mr-12">
             <svg
           width="149"
           height="30"
@@ -90,62 +90,55 @@
             </svg>
         </a>
         
-        <ul class="flex flex-row lg:gap-x-12 gap-x-4">
-            <li>
-              <div class="group flex flex-row gap-x-1 items-center">
-                <button
-                onclick="toggleDropdown()"
-                class="font-body font-medium text-lg text-secondary-dark group-hover:text-primary"
-                >SERVICES</button>
-              <!-- Icon Default -->
-              <svg class="group-hover:hidden block width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.8614 9.53635L11.9864 16.4113C11.9225 16.4753 11.8467 16.526 11.7633 16.5606C11.6798 16.5952 11.5903 16.613 11.5 16.613C11.4096 16.613 11.3202 16.5952 11.2367 16.5606C11.1533 16.526 11.0774 16.4753 11.0136 16.4113L4.13858 9.53635C4.00958 9.40735 3.9371 9.23238 3.9371 9.04994C3.9371 8.86751 4.00958 8.69254 4.13858 8.56354C4.26758 8.43453 4.44255 8.36206 4.62499 8.36206C4.80742 8.36206 4.98239 8.43453 5.11139 8.56354L11.5 14.953L17.8886 8.56354C17.9525 8.49966 18.0283 8.44899 18.1117 8.41442C18.1952 8.37985 18.2847 8.36206 18.375 8.36206C18.4653 8.36206 18.5548 8.37985 18.6382 8.41442C18.7217 8.44899 18.7975 8.49966 18.8614 8.56354C18.9253 8.62741 18.9759 8.70324 19.0105 8.7867C19.0451 8.87016 19.0629 8.95961 19.0629 9.04994C19.0629 9.14028 19.0451 9.22973 19.0105 9.31318C18.9759 9.39664 18.9253 9.47247 18.8614 9.53635Z" fill="black" stroke="black"/>
-              </svg>
-              <!-- Icon Hover -->
-               <svg class="group-hover:block hidden" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.8614 9.53635L11.9864 16.4113C11.9225 16.4753 11.8467 16.526 11.7633 16.5606C11.6798 16.5952 11.5903 16.613 11.5 16.613C11.4096 16.613 11.3202 16.5952 11.2367 16.5606C11.1533 16.526 11.0774 16.4753 11.0136 16.4113L4.13858 9.53635C4.00958 9.40735 3.9371 9.23238 3.9371 9.04994C3.9371 8.86751 4.00958 8.69254 4.13858 8.56354C4.26758 8.43453 4.44255 8.36206 4.62499 8.36206C4.80742 8.36206 4.98239 8.43453 5.11139 8.56354L11.5 14.953L17.8886 8.56354C17.9525 8.49966 18.0283 8.44899 18.1117 8.41442C18.1952 8.37985 18.2847 8.36206 18.375 8.36206C18.4653 8.36206 18.5548 8.37985 18.6382 8.41442C18.7217 8.44899 18.7975 8.49966 18.8614 8.56354C18.9253 8.62741 18.9759 8.70324 19.0105 8.7867C19.0451 8.87016 19.0629 8.95961 19.0629 9.04994C19.0629 9.14028 19.0451 9.22973 19.0105 9.31318C18.9759 9.39664 18.9253 9.47247 18.8614 9.53635Z" fill="#640EF1" stroke="#640EF1"/>
-              </svg>
+        <ul class="flex flex-row items-center space-x-2 sm:space-x-6">
+          <li>
+            <div class="group flex flex-row gap-x-1 items-center">
+              <button
+              onclick="toggleDropdown()"
+              class="font-body font-medium text-lg text-secondary-dark group-hover:text-primary"
+              >SERVICES</button>
+            <!-- Icon Default -->
+            <svg class="group-hover:hidden block" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8614 9.53635L11.9864 16.4113C11.9225 16.4753 11.8467 16.526 11.7633 16.5606C11.6798 16.5952 11.5903 16.613 11.5 16.613C11.4096 16.613 11.3202 16.5952 11.2367 16.5606C11.1533 16.526 11.0774 16.4753 11.0136 16.4113L4.13858 9.53635C4.00958 9.40735 3.9371 9.23238 3.9371 9.04994C3.9371 8.86751 4.00958 8.69254 4.13858 8.56354C4.26758 8.43453 4.44255 8.36206 4.62499 8.36206C4.80742 8.36206 4.98239 8.43453 5.11139 8.56354L11.5 14.953L17.8886 8.56354C17.9525 8.49966 18.0283 8.44899 18.1117 8.41442C18.1952 8.37985 18.2847 8.36206 18.375 8.36206C18.4653 8.36206 18.5548 8.37985 18.6382 8.41442C18.7217 8.44899 18.7975 8.49966 18.8614 8.56354C18.9253 8.62741 18.9759 8.70324 19.0105 8.7867C19.0451 8.87016 19.0629 8.95961 19.0629 9.04994C19.0629 9.14028 19.0451 9.22973 19.0105 9.31318C18.9759 9.39664 18.9253 9.47247 18.8614 9.53635Z" fill="black" stroke="black" />
+            </svg>
+            <!-- Icon Hover -->
+            <svg class="group-hover:block hidden" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8614 9.53635L11.9864 16.4113C11.9225 16.4753 11.8467 16.526 11.7633 16.5606C11.6798 16.5952 11.5903 16.613 11.5 16.613C11.4096 16.613 11.3202 16.5952 11.2367 16.5606C11.1533 16.526 11.0774 16.4753 11.0136 16.4113L4.13858 9.53635C4.00958 9.40735 3.9371 9.23238 3.9371 9.04994C3.9371 8.86751 4.00958 8.69254 4.13858 8.56354C4.26758 8.43453 4.44255 8.36206 4.62499 8.36206C4.80742 8.36206 4.98239 8.43453 5.11139 8.56354L11.5 14.953L17.8886 8.56354C17.9525 8.49966 18.0283 8.44899 18.1117 8.41442C18.1952 8.37985 18.2847 8.36206 18.375 8.36206C18.4653 8.36206 18.5548 8.37985 18.6382 8.41442C18.7217 8.44899 18.7975 8.49966 18.8614 8.56354C18.9253 8.62741 18.9759 8.70324 19.0105 8.7867C19.0451 8.87016 19.0629 8.95961 19.0629 9.04994C19.0629 9.14028 19.0451 9.22973 19 9.31318C18.9759 9.39664 18.9253 9.47247 18.8614 9.53635Z" fill="#640EF1" stroke="#640EF1" />
+            </svg>
+            </div>
+            <!-- Dropdown Content -->
+            <div id="dropdownMenu" class="hidden absolute right-50 mt-2 w-auto bg-gray-400 shadow-2xl rounded-lg md:left-auto md:transform-none md:w-auto">
+                <style>
+                  @media (max-width: 640px) {
+                    #dropdownMenu {
+                      left: 70%;               
+                      transform: translateX(-50%); 
+                      width: 50%;              
+                      right: 5%;               
+                      margin-top: 1rem;        
+                    }
+                  }
+                </style>
+                <!-- About Link for mobile -->
+                <a href="development.html" class="block lg:pr-24 pr-fill lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg">Development</a>
+                <a href="manageservice.html" class="block lg:pr-24 pr-22 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg">Manage Service</a>
+                <a href="aialgorithm.html" class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg">AI Algorithm</a>
+                <a href="scasy.html" class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg">SCASY</a>
+                <a href="about.html" class="block sm:hidden lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg">About</a>
               </div>
-              <!-- Dropdown Content -->
-              <div
-              id="dropdownMenu" class="hidden absolute right-50 mt-2 w-auto bg-white shadow-2xl rounded-lg"
-              >
-                <a
-                  href="development.html"
-                  class="block lg:pr-24 pr-fill lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg"
-                  >Development</a>
-                <a
-                  href="manageservice.html"
-                  class="block lg:pr-24 pr-22 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
-                  "
-                  >Manage Service</a>
-                <a
-                  href="aialgorithm.html"
-                  class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
-                  "
-                  >AI Algorithm</a>
-                  <a
-                  href="scasy.html"
-                  class="block lg:pr-24 pr-12 lg:pl-4 pl-2.5 py-4 lg:text-xl text-lg font-medium text-gray-700 hover:text-gray-100 bg-gray-100 hover:bg-primary rounded-lg
-                  "
-                  >SCASY</a>
-              </div>  
+            <li class="hidden sm:block">
+              <a href="about.html" class="font-body font-medium text-lg text-secondary-dark hover:text-primary">
+                ABOUT
+              </a>
             </li>
-            <li>
-              <a
-                href="about.html"
-                class="font-body font-medium text-lg text-secondary-dark hover:text-primary"
-                >ABOUT</a>
-            </li>
-            <li class="md:block hidden">
-              <a
-                href="mailto:info@limabit.com"
-                class="font-body font-medium text-lg text-secondary-dark hover:text-primary"
-                >CONTACT</a
-              >
-              
-            </li>
-          </ul>
+          <li class="md:block hidden">
+            <a
+              href="mailto:info@limabit.com"
+              class="font-body font-medium text-lg text-secondary-dark hover:text-primary"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
 
